@@ -4,5 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/loviq-cr/',
   plugins: [react(), tailwindcss()],
+  preview: {
+    allowedHosts: true,
+  },
 })
